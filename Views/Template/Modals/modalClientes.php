@@ -104,8 +104,7 @@
             <tr>
               <td>Email (Usuario):</td>
               <td id="celEmail">Larry</td>
-            </tr>
-            <tr>
+            </tr><tr>
               <td>Identificación Tributaria:</td>
               <td id="celIde">Larry</td>
             </tr>

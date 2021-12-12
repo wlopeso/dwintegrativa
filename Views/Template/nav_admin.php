@@ -31,7 +31,7 @@
             </a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="<?= base_url(); ?>/usuarios"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
-                <li><a class="treeview-item" href="<?= base_url(); ?>/roles"><i class="icon fa fa-circle-o"></i> Roles</a></li>
+            
             </ul>
         </li>
         <?php } ?>
@@ -89,10 +89,7 @@
 
          <?php if(!empty($_SESSION['permisos'][MDPAGINAS]['r'])){ ?>
         <li>
-            <a class="app-menu__item" href="<?= base_url(); ?>/paginas">
-                <i class="app-menu__icon fas fa-file-alt" aria-hidden="true"></i>
-                <span class="app-menu__label">Páginas</span>
-            </a>
+            
         </li>
          <?php } ?>
 

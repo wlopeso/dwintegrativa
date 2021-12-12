@@ -162,10 +162,6 @@
 							</li>
 
 							<li>
-								<a href="<?= base_url(); ?>/sucursales">Sucursales</a>
-							</li>
-
-							<li>
 								<a href="<?= base_url(); ?>/contacto">Contacto</a>
 							</li>
 						</ul>
