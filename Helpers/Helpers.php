@@ -259,18 +259,9 @@
         return $cadena;
     }
     //Genera una contraseña de 10 caracteres
-	function passGenerator($length = 10)
+	function passGenerator($nombre, $apellido, $identificacion)
     {
-        $pass = "";
-        $longitudPass=$length;
-        $cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-        $longitudCadena=strlen($cadena);
-
-        for($i=1; $i<=$longitudPass; $i++)
-        {
-            $pos = rand(0,$longitudCadena-1);
-            $pass .= substr($cadena,$pos,1);
-        }
+        $pass = substr($nombre,0,1) . substr($apellido,0,1). $identificacion;
         return $pass;
     }
     //Genera un token
