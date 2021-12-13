@@ -34,7 +34,7 @@
             <table class="table table-bordered">
               <tbody>
                 <tr>
-                  <td style="width:150px;">Identificación:</td>
+                  <td style="width:150px;">Rut:</td>
                   <td><?= $_SESSION['userData']['identificacion']; ?></td>
                 </tr>
                 <tr>
