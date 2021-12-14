@@ -190,17 +190,14 @@
 					{
 						$option = 1;
 						$strPassword =  empty($_POST['txtPassword_2']) ? hash("SHA256",passGenerator($strNombre, $strApellido, $strIdentificacion)) : hash("SHA256",$_POST['txtPassword_2']);
-
-						if($_SESSION['permisosMod']['w']){
-							$request_user = $this->model->insertUsuario($strIdentificacion,
-																				$strNombre, 
-																				$strApellido, 
-																				$intTelefono, 
-																				$strEmail,
-																				$strPassword, 
-																				$intTipoId, 
-																				$intStatus );
-						}
+						$request_user = $this->model->insertUsuario($strIdentificacion,
+																			$strNombre, 
+																			$strApellido, 
+																			$intTelefono, 
+																			$strEmail,
+																			$strPassword, 
+																			$intTipoId, 
+																			$intStatus );
 					}else{
 						$option = 2;
 						$strPassword =  empty($_POST['txtPassword_2']) ? "" : hash("SHA256",$_POST['txtPassword_2']);
@@ -239,4 +236,4 @@
 	}
 
 
- ?>
+?>
