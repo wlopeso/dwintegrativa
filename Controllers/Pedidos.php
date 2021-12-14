@@ -50,7 +50,6 @@ class Pedidos extends Controllers{
 				if($_SESSION['permisosMod']['r']){
 					
 					$btnView .= ' <a title="Ver Detalle" href="'.base_url().'/pedidos/orden/'.$arrData[$i]['idpedido'].'" target="_blanck" class="btn btn-info btn-sm"> <i class="far fa-eye"></i> </a>
-
 						<a title="Generar PDF" href="'.base_url().'/factura/generarFactura/'.$arrData[$i]['idpedido'].'" target="_blanck" class="btn btn-danger btn-sm"> <i class="fas fa-file-pdf"></i> </a> ';
 				}
 				if($_SESSION['permisosMod']['u']){
