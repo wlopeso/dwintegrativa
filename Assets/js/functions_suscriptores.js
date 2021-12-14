@@ -18,11 +18,6 @@ tableSuscriptores = $('#tableSuscriptores').dataTable( {
         'dom': 'lBfrtip',
         'buttons': [
             {
-                "extend": "copyHtml5",
-                "text": "<i class='far fa-copy'></i> Copiar",
-                "titleAttr":"Copiar",
-                "className": "btn btn-secondary"
-            },{
                 "extend": "excelHtml5",
                 "text": "<i class='fas fa-file-excel'></i> Excel",
                 "titleAttr":"Esportar a Excel",
@@ -32,11 +27,6 @@ tableSuscriptores = $('#tableSuscriptores').dataTable( {
                 "text": "<i class='fas fa-file-pdf'></i> PDF",
                 "titleAttr":"Esportar a PDF",
                 "className": "btn btn-danger"
-            },{
-                "extend": "csvHtml5",
-                "text": "<i class='fas fa-file-csv'></i> CSV",
-                "titleAttr":"Esportar a CSV",
-                "className": "btn btn-info"
             }
         ],
         "resonsieve":"true",

@@ -23,14 +23,6 @@ tablePaginas = $('#tablePaginas').dataTable( {
     'dom': 'lBfrtip',
     'buttons': [
         {
-            "extend": "copyHtml5",
-            "text": "<i class='far fa-copy'></i> Copiar",
-            "titleAttr":"Copiar",
-            "className": "btn btn-secondary",
-            "exportOptions": { 
-                "columns": [ 0, 1, 2] 
-            }
-        },{
             "extend": "excelHtml5",
             "text": "<i class='fas fa-file-excel'></i> Excel",
             "titleAttr":"Esportar a Excel",
@@ -45,14 +37,6 @@ tablePaginas = $('#tablePaginas').dataTable( {
             "className": "btn btn-danger",
             "exportOptions": { 
                 "columns": [ 0, 1, 2] 
-            }
-        },{
-            "extend": "csvHtml5",
-            "text": "<i class='fas fa-file-csv'></i> CSV",
-            "titleAttr":"Esportar a CSV",
-            "className": "btn btn-info",
-            "exportOptions": { 
-                "columns": [ 0, 1, 2]
             }
         }
     ],
