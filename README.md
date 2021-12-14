@@ -17,3 +17,9 @@ TODO:
 # USUARIOS 
 will@will.com
 123456
+
+# TODO:
+    agregar mensaje confirmacion de registro USUARIO LOGIN
+    CAMBIAR EL TIPO DE MONEDA
+    CAMBIAR PALABRA EMAIL POR RUT
+    AGREGAR VALIDADOR DEL RUT
