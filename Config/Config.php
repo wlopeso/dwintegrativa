@@ -1,5 +1,5 @@
 <?php 
-	const BASE_URL = "http://localhost/dwintegrativa/";
+	const BASE_URL = "http://localhost/dwintegrativa";
 
 	//Zona horaria
 	date_default_timezone_set('America/Santiago');

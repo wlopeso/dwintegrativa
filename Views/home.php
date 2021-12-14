@@ -1,4 +1,4 @@
-<?php 
+z<?php 
 	headerTienda($data);
 	$arrSlider = $data['slider'];
 	$arrBanner = $data['banner'];
