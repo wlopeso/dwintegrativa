@@ -15,8 +15,9 @@
 
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="txtIdentificacion">Identificación <span class="required">*</span></label>
+                  <label for="txtIdentificacion">Rut <span class="required">*</span></label>
                   <input type="text" class="form-control" id="txtIdentificacion" name="txtIdentificacion" required="">
+                  <span id="msgerror"></span>
                 </div>
                 <div class="form-group col-md-4">
                   <label for="txtNombre">Nombres <span class="required">*</span></label>
@@ -33,7 +34,7 @@
                   <input type="text" class="form-control valid validNumber" id="txtTelefono" name="txtTelefono" required="" onkeypress="return controlTag(event);">
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="txtEmail">Email <span class="required">*</span></label>
+                  <label for="txtEmail">Usuario <span class="required">*</span></label>
                   <input type="email" class="form-control valid validEmail" id="txtEmail" name="txtEmail" required="">
                 </div>
                 <div class="form-group col-md-4">

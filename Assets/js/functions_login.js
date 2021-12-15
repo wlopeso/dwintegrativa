@@ -3,6 +3,38 @@ $('.login-content [data-toggle="flip"]').click(function() {
 	return false;
 });
 
+var Fn = {
+	// Valida el rut con su cadena completa "XXXXXXXX-X"
+	validaRut : function (rutCompleto) {
+		rutCompleto = rutCompleto.replace("‐","-");
+		if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
+		return false;
+		var tmp   = rutCompleto.split('-');
+		var digv  = tmp[1]; 
+		var rut   = tmp[0];
+		if ( digv == 'K' ) digv = 'k' ;
+		
+		return (Fn.dv(rut) == digv );
+	},
+	dv : function(T){
+		var M=0,S=1;
+		for(;T;T=Math.floor(T/10))
+		S=(S+T%10*(9-M++%6))%11;
+		return S?S-1:'k';
+	}
+}
+
+
+$("#txtIdentificacion").on('blur', function(){
+	console.log(Fn.validaRut($("#txtIdentificacion").val()));
+	if (Fn.validaRut($("#txtIdentificacion").val())){
+		$("#msgerror").html('');
+	} else {
+		$("#msgerror").html('<p class="text-danger" id="msgerror">El rut ingresado no es válido.</p>');
+		$("#txtIdentificacion").val('');
+	}
+});
+
 var divLoading = document.querySelector("#divLoading");
 document.addEventListener('DOMContentLoaded', function(){
 	if(document.querySelector("#formLogin")){
@@ -196,20 +228,6 @@ document.addEventListener('DOMContentLoaded', function(){
                     let objData = JSON.parse(request.responseText);
                     if(objData.status)
                     {
-                        if(rowTable == ""){
-                            tableUsuarios.api().ajax.reload();
-                        }else{
-                            htmlStatus = intStatus == 1 ? 
-                            '<span class="badge badge-success">Activo</span>' : 
-                            '<span class="badge badge-danger">Inactivo</span>';
-                            rowTable.cells[1].textContent = strNombre;
-                            rowTable.cells[2].textContent = strApellido;
-                            rowTable.cells[3].textContent = strEmail;
-                            rowTable.cells[4].textContent = intTelefono;
-                            rowTable.cells[5].textContent = document.querySelector("#listRolid").selectedOptions[0].text;
-                            rowTable.cells[6].innerHTML = htmlStatus;
-                            rowTable = ""; 
-                        }
                         $('#modalFormUsuario').modal("hide");
                         formUsuario.reset();
                         swal("Usuarios", objData.msg ,"success");

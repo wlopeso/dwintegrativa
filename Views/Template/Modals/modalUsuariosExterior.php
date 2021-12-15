@@ -5,7 +5,7 @@
       <div class="modal-header headerRegister">
         <h5 class="modal-title" id="titleModal">Registrar Usuario</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
@@ -22,6 +22,7 @@
                 <div class="form-group col-md-6">
                   <label for="txtIdentificacion">Rut</label>
                   <input type="text" class="form-control" id="txtIdentificacion" name="txtIdentificacion" required="">
+                  <span id="msgerror"></span>
                 </div>
               </div>
               <div class="form-row">
