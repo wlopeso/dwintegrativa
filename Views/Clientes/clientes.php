@@ -28,7 +28,7 @@
                           <th>Rut</th>
                           <th>Nombres</th>
                           <th>Apellidos</th>
-                          <th>Email</th>
+                          <th>Usuario</th>
                           <th>Teléfono</th>
                           <th>Acciones</th>
                         </tr>

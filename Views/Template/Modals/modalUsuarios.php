@@ -17,6 +17,7 @@
                 <div class="form-group col-md-6">
                   <label for="txtIdentificacion">Rut</label>
                   <input type="text" class="form-control" id="txtIdentificacion" name="txtIdentificacion" required="">
+                  <span id="msgerror"></span>
                 </div>
               </div>
               <div class="form-row">
@@ -83,7 +84,7 @@
         <table class="table table-bordered">
           <tbody>
             <tr>
-              <td>Identificación:</td>
+              <td>Rut:</td>
               <td id="celIdentificacion">654654654</td>
             </tr>
             <tr>

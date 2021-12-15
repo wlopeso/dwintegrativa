@@ -87,7 +87,7 @@
         <table class="table table-bordered">
           <tbody>
             <tr>
-              <td>Identificación:</td>
+              <td>Rut:</td>
               <td id="celIdentificacion">654654654</td>
             </tr>
             <tr>
