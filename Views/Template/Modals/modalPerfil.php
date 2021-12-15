@@ -33,8 +33,8 @@
                   <input type="text" class="form-control valid validNumber" id="txtTelefono" name="txtTelefono" value="<?= $_SESSION['userData']['telefono']; ?>" required="" onkeypress="return controlTag(event);">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="txtEmail">Email</label>
-                  <input type="email" class="form-control valid validEmail" id="txtEmail" name="txtEmail" value="<?= $_SESSION['userData']['email_user']; ?>" required="" readonly disabled >
+                  <label for="txtEmail">Rut</label>
+                  <input type="text" class="form-control valid validEmail" id="txtEmail" name="txtEmail" value="<?= $_SESSION['userData']['email_user']; ?>" required="" readonly disabled >
                 </div>
               </div>
              <div class="form-row">

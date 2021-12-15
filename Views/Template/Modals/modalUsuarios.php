@@ -35,8 +35,8 @@
                   <input type="text" class="form-control valid validNumber" id="txtTelefono" name="txtTelefono" required="" onkeypress="return controlTag(event);">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="txtEmail">Email</label>
-                  <input type="email" class="form-control valid validEmail" id="txtEmail" name="txtEmail" required="">
+                  <label for="txtEmail">Usuario</label>
+                  <input type="text" class="form-control valid validEmail" id="txtEmail" name="txtEmail" required="">
                 </div>
               </div>
               <div class="form-row">
@@ -99,7 +99,7 @@
               <td id="celTelefono">Larry</td>
             </tr>
             <tr>
-              <td>Email (Usuario):</td>
+              <td>Usuario:</td>
               <td id="celEmail">Larry</td>
             </tr>
             <tr>

@@ -92,7 +92,7 @@
 							$arrResponse = array('status' => true, 'msg' => 'Datos Actualizados correctamente.');
 						}
 					}else if($request_user == 'exist'){
-						$arrResponse = array('status' => false, 'msg' => '¡Atención! el email o la identificación ya existe, ingrese otro.');		
+						$arrResponse = array('status' => false, 'msg' => '¡Atención! el Rut ya existe, ingrese otro.');		
 					}else{
 						$arrResponse = array("status" => false, "msg" => 'No es posible almacenar los datos.');
 					}

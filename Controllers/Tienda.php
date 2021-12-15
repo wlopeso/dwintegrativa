@@ -251,7 +251,7 @@
 						sendEmail($dataUsuario,'email_bienvenida');
 
 					}else if($request_user == 'exist'){
-						$arrResponse = array('status' => false, 'msg' => '¡Atención! el email ya existe, ingrese otro.');		
+						$arrResponse = array('status' => false, 'msg' => '¡Atención! el Rut ya existe, ingrese otro.');		
 					}else{
 						$arrResponse = array("status" => false, "msg" => 'No es posible almacenar los datos.');
 					}

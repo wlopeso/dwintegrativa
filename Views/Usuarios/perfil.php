@@ -50,7 +50,7 @@
                   <td><?= $_SESSION['userData']['telefono']; ?></td>
                 </tr>
                 <tr>
-                  <td>Email (Usuario):</td>
+                  <td>Usuario:</td>
                   <td><?= $_SESSION['userData']['email_user']; ?></td>
                 </tr>
               </tbody>

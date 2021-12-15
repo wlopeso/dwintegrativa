@@ -102,7 +102,7 @@
               <td id="celTelefono">Larry</td>
             </tr>
             <tr>
-              <td>Email (Usuario):</td>
+              <td>Usuario:</td>
               <td id="celEmail">Larry</td>
             </tr><tr>
               <td>Identificación Tributaria:</td>
