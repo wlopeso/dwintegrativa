@@ -46,7 +46,7 @@
               <address><strong><?= $cliente['nombres'].' '.$cliente['apellidos'] ?></strong><br>
                 Envío: <?= $orden['direccion_envio']; ?><br>
                 Tel: <?= $cliente['telefono'] ?><br>
-                Email: <?= $cliente['email_user'] ?>
+                
                </address>
             </div>
             <div class="col-4"><b>Orden #<?= $orden['idpedido'] ?></b><br> 
