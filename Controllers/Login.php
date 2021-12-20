@@ -20,7 +20,7 @@
 			$data['page_functions_js'] = "functions_login.js";
 			$this->views->getView($this,"login",$data);
 		}
-
+		
 		public function loginUser(){
 			//dep($_POST);
 			if($_POST){
@@ -166,12 +166,10 @@
 				{
 					$arrResponse = array("status" => false, "msg" => 'Datos incorrectos.');
 				}else{ 
-
 					$idUsuario = intval($_POST['idUsuario']);
 					$strIdentificacion = strClean($_POST['txtIdentificacion']);
 					$strNombre = ucwords(strClean($_POST['txtNombre']));
 					$strApellido = ucwords(strClean($_POST['txtApellido']));
-
 					if (isset($_POST['idFormulario']) && $_POST['idFormulario']=='Registrar') {
 						# pichicateaos
 						$strEmail = substr($strNombre,0,3) . '_' . $strApellido;
@@ -179,13 +177,11 @@
 						
 						$strEmail = strtolower(strClean($_POST['txtEmail_2']));
 					}
-
 					
 					$intTelefono = intval(strClean($_POST['txtTelefono']));
 					$intTipoId = intval(strClean($_POST['listRolid']));
 					$intStatus = intval(strClean($_POST['listStatus']));
 					$request_user = "";
-
 					if($idUsuario == 0)
 					{
 						$option = 1;
@@ -212,9 +208,7 @@
 																		$intTipoId, 
 																		$intStatus);
 						}
-
 					}
-
 					if($request_user > 0 )
 					{
 						if($option == 1){

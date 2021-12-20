@@ -55,15 +55,15 @@ document.addEventListener('DOMContentLoaded', function(){
 				var ajaxUrl = base_url+'/Login/loginUser'; 
 				var formData = new FormData(formLogin);
 				request.open("POST",ajaxUrl,true);
-				request.send(formData);
-				request.onreadystatechange = function(){
+				request.send(formData);//envia la data del js
+				request.onreadystatechange = function(){//Respuesta de  AJAX 
 					if(request.readyState != 4) return;
 					if(request.status == 200){
-						var objData = JSON.parse(request.responseText);
+						var objData = JSON.parse(request.responseText);//recibe respuesta de controller 
 						if(objData.status)
 						{
 							//window.location = base_url+'/dashboard';
-							window.location.reload(false);
+							window.location.reload(false);//refresca la vista
 						}else{
 							swal("Atención", objData.msg, "error");
 							document.querySelector('#txtPassword').value = "";
